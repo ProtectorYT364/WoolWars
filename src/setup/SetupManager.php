@@ -19,10 +19,12 @@ class SetupManager
     public function ArraysCount()
     {
         $ArrayCount = new \ReflectionClass($this);
+        $count = 0;
         for ($i = 0; $i <= count($ArrayCount->getProperties()); $i++){
-            return $i;
+            $count++;
         }
         unset($ArrayCount);
+        return $count;
     }
 
     public static function getSetupForm(Player $player)
