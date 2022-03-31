@@ -1,2 +1,3 @@
-@ECHO OFF
-START C:\Users\VaxPex\Downloads\Server
+@echo off
+
+start C:\Users\VaxPex\Downloads\Server
